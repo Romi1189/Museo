@@ -64,7 +64,7 @@ function editar_producto(){
         
         $imagenFin =mysqli_escape_string($conexion,$binariosImagen);
                 
-    $consulta="UPDATE objetos SET nombre = '$nombre', descripcion = '$descripcion', color = '$color', precio = '$precio', cantidad = '$cantidad', categorias = '$categorias', imagen = '$imagenFin' WHERE id = $id";
+    $consulta="UPDATE objetos SET nombre = '$nombre', descripcion = '$descripcion', categorias = '$categorias', modo='$modo', imagen = '$imagenFin' WHERE id = $id";
 
     mysqli_query($conexion, $consulta);
     header("Location: ../views/usuarios/");

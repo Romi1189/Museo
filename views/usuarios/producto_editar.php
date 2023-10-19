@@ -2,7 +2,7 @@
 
 $id = $_GET['id'];
 require_once ("../../includes/_db.php");
-$consulta = "SELECT * FROM productos WHERE id = $id";
+$consulta = "SELECT * FROM objetos WHERE id = $id";
 $resultado = mysqli_query($conexion, $consulta);
 $productos = mysqli_fetch_assoc($resultado);
 
@@ -84,6 +84,7 @@ $productos = mysqli_fetch_assoc($resultado);
 <input type="hidden" name="accion" value="editar_producto">
 <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
 <button type="submit" class="btn btn-success">Guardar</button>
+<a href="../usuarios/index.php"><input type="button"  class="btn btn-primary space" value="Volver"></a>
 </div>
 </form>
 </div>

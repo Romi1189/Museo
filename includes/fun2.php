@@ -1,43 +1,53 @@
-<?php 
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/emergente.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    </head>
+<?php
+require_once ('_db.php');
+if(isset ($_POST['insertar'])){
+    if (strlen($_POST['nombre']) >= 1 && strlen($_POST['correo']) >= 1 && strlen($_POST['password']) >= 1 && strlen($_POST['telefono']) >= 1) {
+    $nombre = trim($_POST['nombre']);
+          $correo = trim($_POST['correo']);
+          $password = trim($_POST['password']);
+          $telefono = trim($_POST['telefono']);
+    
+          $consulta = "INSERT INTO user (nombre, correo, telefono, password)
+          VALUES ('$nombre', '$correo', '$telefono', '$password')";
+    
+         mysqli_query($conexion, $consulta);
+         mysqli_close($conexion);
 
-function insertar(){
-    require_once ("_db.php");
-   if(!isset($_POST)){
-    $nombre=$_POST['nombre'];
-               $correo = $_POST['correo'];
-               $password = $_POST['password'];
-               $telefono = $_POST['telefono'];
-         
-               $consulta = "INSERT INTO user (nombre, correo, telefono, password)
-               VALUES ('$nombre', '$correo', '$telefono', '$password')";
-         
-              mysqli_query($conexion, $consulta);
-              mysqli_close($conexion);
-             
-              
-          }
-          header("Location: views/usuarios/usuariosindex.php");
-         }
-     
-     
+         echo "<input type='checkbox' id='btn-modal1'>
+         <div class='container-modal'>
+         <div class='content-modal'>
+         <h1>¡¡¡Nuevo usuario creado!!! </h1>  
+         <div class='btn-cerrar'>
+         <label for='btn-modal1'><a href='../views/usuarios/usuariosindex.php'>Cerrar</a></label>
+         </div>
+         </div>
+         <label for='btn-modal1' class='cerrar-modal'></label>
+         </div>"; 
+    
+   
+}
 
+else{ echo" 
+    <input type='checkbox' id='btn-modal1'>
+    <div class='container-modal'>
+    <div class='content-modal'>
+    <h1>¡¡¡Error al agregar el Usuario!!! </h1>  
+    <div class='btn-cerrar'>
+    <label for='btn-modal1'><a href='../views/usuarios/usuarios/formulario_agregar.php'>Cerrar</a></label>
+    </div>
+    </div>
+    <label for='btn-modal1' class='cerrar-modal'></label>
+    </div>";
+  
+}
+
+}
 
 ?>
-   //variables donde se almacenan los valores de nuestra imagen
-                $tamanoArchvio=$_FILES['foto']['size'];
-    
-        //se realiza la lectura de la imagen
-                $imagenSubida=fopen($_FILES['foto']['tmp_name'], 'r');
-                $binariosImagen=fread($imagenSubida,$tamanoArchvio);   
-        //se realiza la consulta correspondiente para guardar los datos
-        
-        $imagenFin =mysqli_escape_string($conexion,$binariosImagen);
-                
-
-
-    $consulta="INSERT INTO objetos (nombre, descripcion,  categorias, modo, imagen)
-    VALUES ('$nombre', '$descripcion', '$categorias','$modo', '$imagenFin');" ;
-
-    mysqli_query($conexion, $consulta);
-    
-    header("Location: ../views/usuarios/");
+</html>

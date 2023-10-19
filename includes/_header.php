@@ -20,7 +20,7 @@ if($actualsesion == null || $actualsesion == ''){
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="../../css/emergente.css">
     <link rel="stylesheet" href="../../css/styles.css">
     <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
 </head>
@@ -32,7 +32,7 @@ if($actualsesion == null || $actualsesion == ''){
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
     <div class="sidebar-brand-icon rotate-n-15">
     </div>
-    <div class="sidebar-brand-text mx-3"><img src="../css/LogoNuevo.png" alt="" width="60" height="60"></div>
+    <div class="sidebar-brand-text mx-3"><img src="../../css/LogoNuevo-1024x1024.png" width="80" height="80"></div>
 </a>
 <hr class="sidebar-divider my-0">
 <li class="nav-item active">
