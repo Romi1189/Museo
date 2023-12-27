@@ -11,7 +11,7 @@
         <div class="container mt-5">
 <div class="row">
 
-<form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+<!--<form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar por..."
                                 aria-label="Search" aria-describedby="basic-addon2">
@@ -21,16 +21,11 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form>-->
     
-    <div class="mb-3">
-
-   
-                                <a href="usuarios/formulario_agregar.php"><input type="button"  class="btn btn-primary space" value="Crear Usuario"></a>
-                            
-</div>
+    
 <div class="col-sm-12 mb-3">
-<center><h3>Información de sesion </h></center>
+<!--<center><h3>Información de sesion </h></center>
 </div>
 <div class="col-sm-12">
 <div class="table-responsive">
@@ -84,12 +79,18 @@ foreach($usuarios as $key => $row ){
 
     <?php
 }?>
-</tbody>
+</tbody>-->
 
 </table>
 </div>
 </div>
 <div class="col-sm-12 mb-3">
+<div class="mb-3">
+
+   
+<a href="usuarios/formulario_agregar.php"><input type="button"  class="btn btn-primary space" value="Crear Usuario"></a>
+
+</div>
 <center><h3>Usuarios</h3></center>
 </div>
 <div class="col-sm-12">

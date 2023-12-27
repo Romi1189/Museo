@@ -46,8 +46,8 @@
       </div>
     </div>-->
     
-  <div class="text-center bd-dark">
- I.S.F.T. Angaco versión 1.0 - 2023
+  <div class="text-center bd-dark" style="background-color: #60A483">
+ <h5>I.S.F.T. Angaco versión 3.0 - 2023</h5>
   </div>
   
 

@@ -10,7 +10,7 @@
     cursor: pointer;
     transition: all 300ms ease;
 }
-.boten-modal label:hover{
+.boton-modal label:hover{
     background-color: #7fb5d3;
 }
 #btn-modal1{

@@ -9,7 +9,7 @@
         <div class="container mt-5">
 <div class="row">
 <div class="col-sm-12 mb-3">
-<center><h1>Objetos</h1></center>
+<center><h1>Bienes Culturales</h1></center>
 <a href="producto_agregar.php"><input  class="btn btn-primary" type="button" value="Agregar"></a>
 </div>
 <div class="col-sm-12">

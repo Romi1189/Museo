@@ -1,4 +1,182 @@
 
 div .wrapper{
-    background-color: aquamarine;
+    background-color: rgb(135,200,144);
+}
+*{
+  margin: 0;  
+  padding: 0;
+  outline: none;
+  font-family: serif;
+}
+.fondo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0vh;
+  background: url(museo.jpg);
+  margin-top: -2%;
+background-position: center;
+background-size: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.container1{
+    
+    width: 350px;
+    background: rgb(235, 235, 175);
+    border-radius: 7px;
+    text-align: center;
+    padding: 30px 35px 0px 35px;
+
+}
+.container1 header{
+    font-size: 28px;
+    font-weight: 400;
+    margin:0 0 30px 0 ;
+}
+.container1 .form-princ{
+    width: 100%;
+    overflow: hidden;
+
+}
+.form-princ form{
+display: flex;
+width: 400%;
+}
+.form-princ form .pagina{
+    width: 25%;
+    transition: margin-left 0.3s ease-in-out;
+}
+.form-princ form .pagina .titulo{
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(53, 52, 52);
+}
+.form-princ form .pagina .campo{
+    width: 35px;
+    height: 35px;
+    margin: 40px 0;
+    display: flex;
+    position: relative;
+
+}
+.form-princ form .pagina .campo .label{
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+    font-size:18px ;
+    font-style: italic;
+    float: left;
+    text-align: left;
+    width: 100% ;
+    color: rgb(53, 52, 52);
+}
+.form-princ form .pagina .campo2{
+    width: 500px;
+    height: 35px;
+    margin: 40px 0;
+    display: flex;
+    position: relative;
+
+}
+.form-princ form .pagina .campo2 .label2{
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+    font-size:14px ;
+    font-style: italic;
+    float: left;
+    text-align: left;
+    width: 100% ;
+    color: rgb(53, 52, 52);
+}
+.form-princ form .pagina .campo1 .label1{
+    font-style: italic;
+    color: rgb(53, 52, 52); 
+}
+
+.form-princ form .pagina .campo .input{
+width: 100%;
+height: 100%;
+border: 1px solid lightgrey;
+border-radius: 5px;
+font-size: 16px ;
+padding-left: 15px;
+}
+.form-princ form .pagina .campo .select{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid lightgrey ;
+}
+
+
+.form-princ form .pagina .campo button{
+    
+   width:auto;
+    height:calc(100% + 5px);
+    margin-top: -20px;
+    border: none ;
+    background: #60A483;
+    border-radius: 7px;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+  padding: 16px 24px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+
+    
+    
+    
+}
+.form-princ form .pagina .campo .button-hover{
+    background: pink;
+
+}
+.form-princ form .pagina .btns button{
+    margin-top: -20px!important;
+   
+}
+form .pagina .btns button.volver{
+    margin-right: 3px;
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form .pagina .btns button.adelante{
+margin-left: 3px;
+font-size: 17px;
+padding: 15px;
+text-align: center;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: white;
+}
+span{
+    color: white;
 }

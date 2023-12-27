@@ -60,6 +60,7 @@ DISCOGRAFÍA
         <input class="soon" type="button" value="Mas categorias proximamenente">
     </div>
 </div>-->
-</body>
 <?php require '../../includes/_footer.php' ?>
+</body>
+
 </html>

@@ -17,7 +17,7 @@ $filas=mysqli_num_rows($resultado);
 
 if($filas){
   
-    header('Location: ../../views/usuarios/index.php');
+    header('Location: ../../views/usuarios/inicio.php');
 
 
 }else{

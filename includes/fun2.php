@@ -14,7 +14,7 @@ if(isset ($_POST['insertar'])){
           $telefono = trim($_POST['telefono']);
     
           $consulta = "INSERT INTO user (nombre, correo, telefono, password)
-          VALUES ('$nombre', '$correo', '$telefono', '$password')";
+          VALUES ('DEFAULT',$nombre', '$correo', '$telefono', '$password')";
     
          mysqli_query($conexion, $consulta);
          mysqli_close($conexion);

@@ -3,8 +3,11 @@
 <?php require '../../includes/_db.php' ?>
 <?php require '../../includes/_header.php' ?>
 <body>
+   
+<center><h3><strong> Registro de Bienes Culturales</strong></h3></center>
 
-<div class="container">
+
+<div class="container" >
 <div class="col-sm-6 offset-3 mt-5">
 <form action="../../includes/_functions.php" method="POST"  enctype="multipart/form-data">
 
@@ -26,7 +29,7 @@
 
 
 
-</div>
+
 
 <div class="row">
     <div class="col-md-4">
@@ -71,11 +74,14 @@
 <div class="mb-3">
 <input type="hidden" name="accion" value="insertar_productos">
 <button type="submit" class="btn btn-success">Guardar</button>
+<a href="../../index.php"><input type="button"  class="btn btn-primary space" value="Volver"></a>
 </div>
 </form>
 </div>
 </div>
 </div>
 </body>
-<?php require '../../../includes/_footer.php' ?>
+<?php require '../../includes/_footer.php' ?>
+
+
 </html>

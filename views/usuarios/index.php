@@ -8,9 +8,9 @@
         <div class="container mt-5">
 <div class="row">
 <div class="col-sm-12 mb-3">
-<center><h1>Objetos</h1></center>
+<center><h1>Bienes Culturales</h1></center>
 </div>
-<form
+<!--<form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar por..."
@@ -21,14 +21,14 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
-                    <div class="mb-3">
-<a href="producto_agregar.php"><input  class="btn btn-primary" type="button" value="Agregar"></a>
-</div>
+                    </form>-->
+
 
 <div class="col-sm-12">
 <div class="table-responsive">
-
+<div class="mb-3">
+<a href="../usuarios/producto_agregar.php"><input  class="btn btn-primary" type="button" value="Agregar"></a>
+</div>
 
 <table class="table table-striped table-hover">
 <thead>
@@ -86,7 +86,7 @@ if ($row['cantidad'] <= $row['cantidad_min']) {
 
 <td><?php echo $row['categorias']; ?></td>
 <td><?php echo $row['modo']; ?></td>
-<td><img width="100" src="data:image;base64,<?php echo base64_encode($row['imagen']);  ?>" ></td>
+<td><img width="50" src="data:image;base64,<?php echo base64_encode($row['imagen']);  ?>" ></td>
 
 <td>
   <a href="producto_editar.php?id=<?php echo $row['id']?>">
